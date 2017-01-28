@@ -9,6 +9,10 @@ app.get('/',function(request,response){
     response.status(200).send('Hello World!');
 });
 
+app.get('/test',function(request,response){
+    response.status(200).send('1 + 1 = 2');
+});
+
 app.listen(PORT,function(){
     console.log('server listen on port: ' + PORT);
 });
